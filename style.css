@@ -1,0 +1,54 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "cabeca cabeca cabeca"
+    "aside corpo corpo"
+    "roda roda roda";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+header{
+    background-color:blueviolet;
+    grid-area: cabeca;
+
+}
+aside{
+    grid-area: aside;
+    background-color: blue;
+}
+main{
+    grid-area: corpo;
+    background-color: aqua;
+}
+footer{
+    grid-area: roda;
+    background-color: chartreuse;
+}
+@media screen and (max-width:800px){
+    body{
+        grid-template-areas: 
+        "cabeca"
+        "aside"
+        "corpo"
+        "roda";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+    
+}
+@media screen and (max-width:400px){
+    body{
+        grid-template-areas: 
+        "cabeca"
+        "corpo"
+        "roda";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+    
+}
+    
+ 
+    
+ 
+ 
