@@ -94,11 +94,15 @@ footer {
     border-radius: 25px; /* Define a borda arredondada */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
     transition: box-shadow 0.3s; /* Adiciona uma transição suave */
+    cursor: pointer;
 }
 .item img{
     width: 50%;
     border-radius: 5px;
     margin: 7px;
+}
+.item h5{
+    margin: 5px;
 }
 
 /* Estiliza os itens ao passar o mouse sobre eles */
@@ -173,3 +177,59 @@ footer img{
     margin: 5px;
     display: flex;
 }
+section a{
+    text-decoration: none;
+    color: black;
+}
+.item p{
+    color: rgb(144, 163, 163);
+    font-size: 15px;
+}
+.item span{
+    margin-top: 4px;
+}
+/* Modificaçao do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-col h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.footer-col p {
+    color: #ccc;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+}
+/* Fim rodapé */
