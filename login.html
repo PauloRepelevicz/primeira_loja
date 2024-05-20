@@ -1,0 +1,44 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML, que é o HTML5 -->
+
+<html lang="pt-BR"> <!-- Início do documento HTML com o idioma definido como Português do Brasil -->
+
+<head> <!-- Início da seção de cabeçalho da página -->
+    <meta charset="UTF-8"> <!-- Definição da codificação de caracteres como UTF-8, que inclui caracteres especiais e acentos -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Configuração para garantir a compatibilidade com versões antigas do Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuração para ajustar a largura da página ao dispositivo do usuário -->
+    <title>Login</title> <!-- Título da página exibido na aba do navegador -->
+
+    <!-- Inclusão do arquivo de estilos externo para estilizar a página -->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body> <!-- Início do corpo da página -->
+
+    <div class="page"> <!-- Início de uma seção da página, que representa a área do formulário de login -->
+        <form method="POST" class="formLogin"> <!-- Início do formulário de login com o método de envio POST e uma classe CSS chamada formLogin -->
+
+            <h1>Login</h1> <!-- Título principal do formulário -->
+
+            <p>Digite os seus dados de acesso no campo abaixo.</p> <!-- Instrução para os usuários informarem seus dados -->
+
+            <label for="email">E-mail</label> <!-- Rótulo para o campo de entrada de e-mail -->
+
+            <!-- Campo de entrada de e-mail -->
+            <input type="email" placeholder="Digite seu e-mail" autofocus="true" /> <!-- Tipo de entrada especificado como e-mail, com uma dica de texto para orientar o usuário -->
+
+            <label for="password">Senha</label> <!-- Rótulo para o campo de entrada de senha -->
+
+            <!-- Campo de entrada de senha -->
+            <input type="password" placeholder="Digite sua senha" /> <!-- Tipo de entrada especificado como senha, com uma dica de texto para orientar o usuário -->
+
+            <a href="#">Esqueci minha senha</a> <!-- Link para recuperação de senha, caso o usuário tenha esquecido -->
+
+            <!-- Botão de submissão do formulário -->
+            <button class="btn"><a href="index.html">Entrar</a></button> <!-- Botão com texto "Entrar", que redireciona para a página inicial (index.html) -->
+            
+        </form> <!-- Fim do formulário de login -->
+    </div> <!-- Fim da seção da página -->
+
+</body> <!-- Fim do corpo da página -->
+
+</html> <!-- Fim do documento HTML -->
