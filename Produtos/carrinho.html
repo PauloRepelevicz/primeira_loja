@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho do carrinho de compras -->
+        <header>
+            <h1>Carrinho de Compras</h1>
+        </header>
+        <!-- Seção onde os itens do carrinho serão listados -->
+        <main>
+        <section class="cart">
+            <!-- Exemplo de um item no carrinho -->
+                <div class="cart-item">
+                    <img src="../imagens/01.jpg" alt="Produto 1" class="item-image">
+                    <div class="item-details">
+                        <h2 class="item-name">Livro-O Homem mais rico da Babilonia</h2>
+                        <p class="item-price">R$ 29,99+frete</p>
+                        <input type="number" class="item-quantity" value="1" min="1">
+                    </div>
+                    <button class="remove-item">Remover</button>
+                </div>
+            </section>
+        </main>
+        <!-- Seção do total e do botão de finalizar compra -->
+        <footer>
+            <div class="total">
+                <h3>Total: <span class="total-amount">R$ 35,99</span></h3>
+            </div>
+            <button class="checkout">Finalizar Compra</button>
+        </footer>
+    </div>
+</body>
+</html>

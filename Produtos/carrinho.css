@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Reseta algumas propriedades básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+/* Estilização da página em geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container principal do carrinho de compras */
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* Estilização do cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+/* Estilização dos itens do carrinho */
+.cart {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-name {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.item-price {
+    font-size: 1.2em;
+    color: #000;
+    margin: 10px 0;
+}
+
+.item-quantity {
+    width: 50px;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.remove-item {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-item:hover {
+    background-color: #c0392b;
+}
+
+/* Estilização do total e do botão de finalizar compra */
+footer {
+    text-align: center;
+}
+
+.total {
+    margin-bottom: 20px;
+}
+
+.total-amount {
+    font-size: 1.5em;
+    color: #000;
+}
+
+.checkout {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.checkout:hover {
+    background-color: #219150;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item-image {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .remove-item {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .checkout {
+        width: 100%;
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .item-name {
+        font-size: 1.2em;
+    }
+
+    .item-price {
+        font-size: 1em;
+    }
+
+    .total-amount {
+        font-size: 1.2em;
+    }
+
+    .checkout {
+        font-size: 1em;
+    }
+}
+

@@ -1,29 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>###</title>
-</head>
+    <title>Livraria Tarquinio</title>
+</head>  
 <body>
     <header class="header">
-        <img src="imagens/Interna.png" alt="logo">
+       <a href="index.html"><img src="imagens/Interna.png" alt="logo"></a> 
         <nav class="nav">
             <input type="checkbox" class="checkbox" id="checkbox">
             <label for="checkbox" class="label-menu">
                 Menu <span class="hamburguer"></span>
             </label>
             <ul class="menu">
-                <li><a href="#">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="#">Seja apoiador</a></li>
-                <li><a href="#">Carrinho</a></li>
-                <li><a href="#">login</a></li>
+                <li><a href="Produtos/carrinho.html">Carrinho</a></li>
+                <li><a href="login.html">login</a></li>
             </ul>
         </nav>
     </header>
     <aside>
-        aaaa
+        <div class="search-container">
+            <h1 class="h1">Pesquisa de Livros e Autores</h1>
+            <form id="searchForm">
+                <div class="input-group">
+                    <label for="bookSearch">Pesquisar Livro:</label>
+                    <input type="text" id="bookSearch" name="bookSearch" placeholder="Digite o nome do livro">
+                </div>
+                <div class="input-group">
+                    <label for="authorSearch">Pesquisar Autor:</label>
+                    <input type="text" id="authorSearch" name="authorSearch" placeholder="Digite o nome do autor">
+                <button type="submit">Pesquisar</button>
     </aside>
     <main>
          <!-- Seção principal -->
@@ -124,8 +134,8 @@
             <div class="footer-col">
                 <h3>Links Úteis</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Logout</a></li>
                     <li><a href="#">Serviços</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>

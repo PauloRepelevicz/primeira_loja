@@ -2,7 +2,7 @@
 /* Importaçao de uma font do google */
 
 /* Definindo variáveis CSS para cores  */
-:root {
+:root { 
     --cor-primaria: #f0f0f0;
     --cor-secundaria: #24252a;
 }
@@ -94,8 +94,8 @@ header img {
     display: none;
 }
 
-/* Estilos específicos para telas menores que 550px */
-@media screen and (max-width: 550px) {
+/* Estilos específicos para telas menores que 400px */
+@media screen and (max-width: 400px) {
     /* Configuração do menu para dispositivos móveis */
     .menu {
         display: none; /* Menu escondido por padrão */
@@ -129,7 +129,6 @@ header img {
         padding-block: 1rem;
         cursor: pointer;
     }
-
     /* Estilos do ícone de hamburguer */
     .hamburguer {
         border-top: 0.125rem solid;
@@ -233,7 +232,7 @@ section a{
 }
 /* Modificaçao do rodapé */
 footer {
-    background-color: #333;
+    background-color: var(--cor-secundaria);
     color: #fff;
     padding: 50px 0;
 }
@@ -276,3 +275,42 @@ footer {
     color: #fff;
 }
 /* Fim rodapé */
+
+h1 {
+    font-size: 24px; /* Define o tamanho da fonte do título como 24 pixels */
+    margin-bottom: 20px; /* Adiciona uma margem inferior de 20 pixels abaixo do título */
+}
+
+.input-group {
+    margin-bottom: 15px; /* Adiciona uma margem inferior de 15 pixels entre cada grupo de entrada */
+    text-align: left; /* Alinha o texto à esquerda dentro do grupo de entrada */
+}
+
+label {
+    display: block; /* Faz com que o rótulo seja exibido como um bloco, ocupando toda a largura disponível */
+    margin-bottom: 5px; /* Adiciona uma margem inferior de 5 pixels abaixo do rótulo */
+    font-weight: bold; /* Define o peso da fonte do rótulo como negrito */
+}
+
+input[type="text"] {
+    width: calc(100% - 10px); /* Define a largura do campo de texto como 100% do contêiner menos 10 pixels */
+    padding: 8px; /* Adiciona um preenchimento interno de 8 pixels ao redor do campo de texto */
+    border: 1px solid #ccc; /* Define uma borda sólida de 1 pixel com a cor cinza claro (#ccc) */
+    border-radius: 4px; /* Define bordas arredondadas com raio de 4 pixels */
+    font-size: 16px; /* Define o tamanho da fonte dentro do campo de texto como 16 pixels */
+}
+
+button {
+    background-color: #4CAF50; /* Define a cor de fundo do botão como verde (#4CAF50) */
+    color: white; /* Define a cor do texto dentro do botão como branca */
+    border: none; /* Remove qualquer borda padrão do botão */
+    padding: 10px 20px; /* Adiciona um preenchimento interno de 10 pixels nas partes superior e inferior e 20 pixels nas laterais */
+    font-size: 16px; /* Define o tamanho da fonte dentro do botão como 16 pixels */
+    border-radius: 4px; /* Define bordas arredondadas com raio de 4 pixels */
+    cursor: pointer; /* Altera o cursor para um ponteiro quando o botão é sobreposto */
+    transition: background-color 0.3s; /* Adiciona uma transição suave de 0.3 segundos para a mudança da cor de fundo */
+}
+
+button:hover {
+    background-color: #45a049; /* Altera a cor de fundo do botão para um tom de verde mais escuro (#45a049) quando o botão é sobreposto */
+}
